@@ -3,6 +3,8 @@ PyZenity is an easy to use interface to Zenity for Python.
 
 **_This is a fork of PyZenity 0.1.7 works in Python 3.5 or higher. The original author of PyZenity is [Brian Ramos](http://brianramos.com/?page_id=38)._**
 
+The documentation is available [here](http://brianramos.com/software/PyZenity/docs/).
+
 Copyright (c) 2012 Brian Ramos
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
