@@ -60,7 +60,7 @@ zen_exec = 'zenity'
 
 
 def run_zenity(type, *args):
-    return Popen([zen_exec, type] + list(args), stdin=PIPE, stdout=PIPE)
+    return Popen([zen_exec, type] + list(args), stdin=PIPE, stdout=PIPE, stderr=PIPE)
 
 
 # This is a dictionary of optional parameters that would create 
