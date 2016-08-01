@@ -375,9 +375,11 @@ def Progress(text='', percentage=0, auto_close=False, pulsate=False, **kwargs):
     def update(percent, message=''):
         if type(percent) == float:
             percent = int(percent * 100)
-        p.stdin.write(str(percent) + '\n')
+        p.stdin.write((str(percent) + '\n').encode())
+        p.stdin.flush()
         if message:
-            p.stdin.write('# %s\n' % message)
+            p.stdin.write(('# %s\n' % message).encode())
+            p.stdin.flush()
         return p.returncode
 
     return update
