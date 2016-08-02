@@ -5,6 +5,10 @@ PyZenity is an easy to use interface to Zenity for Python.
 
 The documentation is available [here](http://brianramos.com/software/PyZenity/docs/).
 
+## How to install
+
+```bash sudo python3 <path/to/PyZenity/setup.py> install```
+
 Copyright (c) 2012 Brian Ramos
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
