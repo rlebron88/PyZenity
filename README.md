@@ -7,7 +7,7 @@ The documentation is available [here](http://brianramos.com/software/PyZenity/do
 
 ## How to install
 
-```bash sudo python3 <path/to/PyZenity/setup.py> install```
+```sudo python3 <path/to/PyZenity/setup.py> install```
 
 Copyright (c) 2012 Brian Ramos
 
