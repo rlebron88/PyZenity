@@ -370,7 +370,7 @@ def Progress(text='', percentage=0, auto_close=False, pulsate=False, **kwargs):
     for generic_args in kwargs_helper(kwargs):
         args.append('--%s=%s' % generic_args)
 
-    p = Popen([zen_exec, '--progress'] + args, stdin=PIPE, stdout=PIPE)
+    p = Popen([zen_exec, '--progress'] + args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
 
     def update(percent, message=''):
         if type(percent) == float:
