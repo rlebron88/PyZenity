@@ -63,20 +63,12 @@ def run_zenity(type, *args):
     return Popen([zen_exec, type] + list(args), stdin=PIPE, stdout=PIPE, stderr=PIPE)
 
 
-# This is a dictionary of optional parameters that would create 
-# syntax errors in python if they were passed in as kwargs.
-kw_subst = {
-    'window_icon': 'window-icon',
-    'ok_label': 'ok-label',
-    'cancel_label': 'cancel-label'
-}
-
 def kwargs_helper(kwargs):
     """This function preprocesses the kwargs dictionary to sanitize it."""
 
     args = []
     for param, value in kwargs.items():
-        param = kw_subst.get(param, param)
+        param = param.replace('_', '-')
         args.append((param, value))
     return args
 
